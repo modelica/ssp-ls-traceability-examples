@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stmd:SimulationTaskMetaData version="1.0.0" name="DC Motor Example" GUID="93ddd18d-fb48-40c8-ba37-b1fce865c877" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-04-08T08:15:21Z" description="Simple Example of a simulation task (Pre-selection of a DC-motor for a window lifter application)&#10;" xmlns:ssc="http://ssp-standard.org/SSP1/SystemStructureCommon" xmlns:stc="http://ssp-standard.org/SSPTraceability1/SSPTraceabilityCommon" xmlns:stmd="http://ssp-standard.org/SSPTraceability1/SimulationTaskMetaData" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <stmd:GeneralInformation>
+        <stc:DerivationChain>
+            <stc:DerivationChainEntry GUID="4754bec3-0bbf-4846-8d59-9aef55649202"/>
+            <stc:DerivationChainEntry GUID="c535b361-5b14-4a32-8b5d-0fcaf5613579" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-27T21:29:54Z"/>
+            <stc:DerivationChainEntry GUID="c5576172-ec28-41e7-90ed-0fdae96d6946" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-27T21:35:32Z"/>
+            <stc:DerivationChainEntry GUID="ade89ae8-42b9-4bb5-9d17-55c79c7debf9" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-28T15:23:34Z"/>
+            <stc:DerivationChainEntry GUID="8de26046-72c1-4b30-9a85-7eb779a79c15" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-28T17:53:25Z"/>
+            <stc:DerivationChainEntry GUID="438dd89a-ff68-4f59-a922-76fbbe30ebd2" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-30T14:52:55Z"/>
+            <stc:DerivationChainEntry GUID="0a174373-1fde-4af7-bdc0-55d4e9c25521" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-30T15:53:33Z"/>
+            <stc:DerivationChainEntry GUID="dff8376b-fa79-4645-8cb1-9bc657744c40" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2021-10-30T16:25:34Z"/>
+            <stc:DerivationChainEntry GUID="ece4b534-8192-496f-90ac-0f98cea1fc0b" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-01-30T15:26:41Z"/>
+            <stc:DerivationChainEntry GUID="80cde0ea-f9a1-42fa-91f5-cb2478af4605" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-02-01T08:43:36Z"/>
+            <stc:DerivationChainEntry GUID="834748c5-fe6b-4505-b830-b7aead1bc218" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-02-12T15:44:22Z"/>
+            <stc:DerivationChainEntry GUID="67323f1e-e90d-4ef6-b829-8bf6aab382ef" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-02-17T17:54:07Z"/>
+            <stc:DerivationChainEntry GUID="c4d334b9-4286-471f-9181-e3e68b0be0b7" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-09T17:09:17Z"/>
+            <stc:DerivationChainEntry GUID="f9f023b2-e786-4bbf-add3-c72cc64f2156" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-09T17:24:14Z"/>
+            <stc:DerivationChainEntry GUID="6fae0e56-6d46-45bb-bc27-e57cffc63416" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-09T17:30:36Z"/>
+            <stc:DerivationChainEntry GUID="c8a9126c-9595-43be-bc33-c19ed7e0c220" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T14:26:11Z"/>
+            <stc:DerivationChainEntry GUID="00c5a1ba-0380-44e6-bf0c-27644eb1b4a7" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T14:41:13Z"/>
+            <stc:DerivationChainEntry GUID="e6d036c7-8c17-40fc-80d0-547bb0e374e1" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T15:02:36Z"/>
+            <stc:DerivationChainEntry GUID="a28b44db-3624-437e-8333-657d56d5db31" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T15:44:02Z"/>
+            <stc:DerivationChainEntry GUID="c86db4f0-8fde-4afb-af46-8e43a9b29659" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T15:59:26Z"/>
+            <stc:DerivationChainEntry GUID="4d1e6935-dcc9-48a5-844a-5cadfcb49f12" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-19T16:38:23Z"/>
+            <stc:DerivationChainEntry GUID="fc6b8856-66c4-40e4-99b2-f2bb6862a79d" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-20T13:56:00Z"/>
+            <stc:DerivationChainEntry GUID="4070a8c6-cee6-46e5-9ea4-4a3994a47533" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-20T15:03:17Z"/>
+            <stc:DerivationChainEntry GUID="e620683c-202c-485c-9f29-eebd34038bf8" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-04-20T15:16:47Z"/>
+            <stc:DerivationChainEntry GUID="691874ee-c46d-43ab-9f4e-2fb9c484727f" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-06-27T15:47:33Z"/>
+            <stc:DerivationChainEntry GUID="a8ecae9b-4448-4d28-a6b7-bf25fc1064c8" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-06-27T18:21:18Z"/>
+            <stc:DerivationChainEntry GUID="c98d8ff3-a794-43d0-87e0-c83136ecc08a" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-06-28T15:22:21Z"/>
+            <stc:DerivationChainEntry GUID="e8ebc11f-a534-4b54-8125-2a3a889494bc" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-07-01T05:54:29Z"/>
+            <stc:DerivationChainEntry GUID="d6750697-905e-4041-8e97-5f3eec83ccd0" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-07-08T11:34:19Z"/>
+            <stc:DerivationChainEntry GUID="e4b96ac7-7b1a-49c6-9a68-0fa4e57c44b5" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2022-07-21T12:23:26Z"/>
+            <stc:DerivationChainEntry GUID="18aed96e-a0db-4f73-9980-08ceca627b50" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2023-10-04T07:29:10Z"/>
+            <stc:DerivationChainEntry GUID="56492e34-4b89-4961-b44b-a169df719f2a" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-02-06T13:21:38Z"/>
+            <stc:DerivationChainEntry GUID="09b63155-9149-4607-8d1e-5f73ae395209" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-02-22T13:49:28Z"/>
+            <stc:DerivationChainEntry GUID="57a6590e-03c8-4791-9c23-97b86230cb0e" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-02-27T07:02:26Z"/>
+            <stc:DerivationChainEntry GUID="5325b9a2-e5a1-484d-9749-8053273a6ae7" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-03T12:50:44Z"/>
+            <stc:DerivationChainEntry GUID="ce589742-ae94-4104-bd18-3f2e963cfec1" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-03T20:55:47Z"/>
+            <stc:DerivationChainEntry GUID="1bf861bb-52c7-4d5a-8f3c-5ec7ac5ace31" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-05T12:28:24Z"/>
+            <stc:DerivationChainEntry GUID="1e67f774-229e-4baa-bd60-af07f68fa414" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-07T13:27:36Z"/>
+            <stc:DerivationChainEntry GUID="083a113c-4f23-4ce5-b4fb-90c6bcd2f26d" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-08T08:11:06Z"/>
+            <stc:DerivationChainEntry GUID="957f2fa6-4d55-4182-8b16-1500de3247ae" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-10T21:34:45Z"/>
+            <stc:DerivationChainEntry GUID="18ad736e-1e31-4695-8170-4759c222cc3c" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-11T06:37:02Z"/>
+            <stc:DerivationChainEntry GUID="9190b42e-9855-4b80-99ca-e24bb55b0402" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-21T16:28:00Z"/>
+            <stc:DerivationChainEntry GUID="258aa8fd-ead6-4cd7-9154-7c8725955e5a" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-21T16:32:19Z"/>
+            <stc:DerivationChainEntry GUID="b40c7dcc-d0b0-4fee-b173-65b2823a642a" author="" fileversion="" copyright="" license="" generationTool="orchideo | easySSP (eXXcellent solutions GmbH)" generationDateAndTime="2024-03-22T10:06:24Z"/>
+        </stc:DerivationChain>
+        <stc:Resource kind="document" type="text/markdown" source="0-Request-CSP-AdminInformation.md" id="d41aae674-42e0-4255-af27-fc3001e5a4b5"/>
+        <stc:Classification type="org.prostep.srmd.simulation-task" description="draft version of aligned cor metadata which are necessary for the traceability and credibility of simulation tasks" xlink:type="simple" xlink:href="">
+            <stc:ClassificationEntry keyword="administrative.overall-project.name" xlink:type="simple" description="The product/project information expresses the in-house description of a product (Recommended)">Window-Lifter-ddp-plat-xx</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.overall-project.id" xlink:type="simple" description="ID, URL of overall product, project (Recommended)">P987658</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.overall-project.selfexplainig-name" xlink:type="simple" description="The meta data provides a self-explaining name which allows a natural mapping to the parent product/project (Optional)">Window lifter, variant ddp, platform xx</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.ordering-project.name" xlink:type="simple" description="description of the commissioning project (Mandatory)">Electro Motor window lifter Variant AAA-55</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.ordering-project.id" xlink:type="simple" description="ID, URL of ordering project (Mandatory)">E98765834</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.ordering-project.selfexplainig-name" xlink:type="simple" description="The meta data provides a self-explaining name which allows a natural mapping to the parent product/project (Optional)">Electro Motor window lifter Variant AAA-55</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-request.name" xlink:type="simple" description="Name of the simulation request (Mandatory)">Request-E98765834-4567</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-request.id" xlink:type="simple" description="ID, URL of simulation-request (Mandatory)">E98765834-4567</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-request.selfexplaining-name" xlink:type="simple" description="The meta data provides a self-explaining name which allows a natural mapping to this element (Optional)">Simulation Request, E98765834-4567</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-task.name" xlink:type="simple" description="description of this element (Mandatory)">Simulation Request for Electro Motor window lifter Variant AAA-55</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-task.id" xlink:type="simple" description="ID, URL of simulation-task (Mandatory)"> R424242</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-task.selfexplainig-name" xlink:type="simple" description="The meta data provides a self-explaining name which allows a natural mapping to the simulation task (Optional)">Simulation Request, Electro Motor, Mild Hybrid, Variant</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-task.version" xlink:type="simple" description="Version of this element (Recommended)">Version 42</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.simulation-task.life-cycle" xlink:type="simple" description="Life cycle of this element. drafted, defined, accepted, in progress, fulfilled, archived, rejected (Recommended)">in Progress</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.connected-process.name" xlink:type="simple" description="description of the connected Process (Mandatory)">Simulation Request for Electro Motor window lifter Variant AAA-55</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.connected-process.id" xlink:type="simple" description="ID, URL of the connected Process (Mandatory)">R424242</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.connected-process.selfexplainig-name" xlink:type="simple" description="The meta data provides a self-explaining name which allows a natural mapping to the connected Process (Recommended)">Simulation Request, Electro Motor, window lifter, Variant</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.contact.insert-name" xlink:type="simple" description="The person who processes the simulation order and submits it to the system (optional)">FG/SIM P. Bauer</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.date.submitted-system" xlink:type="simple" description="The date at which this element (i.e. request, task) is submitted to the system (Optional)">2024.02.01 14.25.30</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.date.order" xlink:type="simple" description="The order date represents the date at which the service shall start (Recommended)">2024.01.30 12.30</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.date.delivery" xlink:type="simple" description="The date at which the simulation service shall be completed (Recommended)">2024.03.30 12.30</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.contact.customer-person" xlink:type="simple" description="The person of the company and entity who placed the simulation order to obtain a simulation service (Recommended)">Carla Miller</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.contact.customer-entity" xlink:type="simple" description="The company and entity of the person who placed the simulation order to obtain a simulation service (Recommended)">Company A Dep X</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.contact.contractor-person" xlink:type="simple" description="The person of the company and entity who accept the simulation order to obtain a simulation service (Recommended)">Albert Huber</stc:ClassificationEntry>
+            <stc:ClassificationEntry keyword="administrative.contact.contractor-entity" xlink:type="simple" description="The company and entity of the person who accept the simulation order to obtain a simulation service (Recommended)">Company B Dep SIM</stc:ClassificationEntry>
+        </stc:Classification>
+    </stmd:GeneralInformation>
+    <stmd:AnalysisPhase>
+        <stmd:AnalyzeSimulationTaskAndObjectives>
+            <stc:Input>
+                <stc:Resource kind="document" type="text/markdown" source="1-1-Request-CSP-Objectives-DC-Motor.md" id="ddc43aff1-7785-4f77-b26e-3448a05ad63c"/>
+                <stc:Resource kind="document" type="application/pdf" source="1-1-DC-Motor-WindowLifter.pdf" id="d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="1-1-Analyze-Execution.md" id="ddb213fbe-22e4-4d74-bd2e-36182365cf0f"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="1-1-Analyze-Outputs.md" id="d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="1-1-Analyze-Rationale.md" id="da95ed7cb-8424-45bc-ae34-2f53e560c20e"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="objectives.system-under-test" xlink:type="simple" description="Specification of the sample type (e.g. A-sample, B-sample) or the SW status (e.g. CAT and version numbers) which is subject to the simulation, modeling (System under Test SuT) (Mandatory)">DC-Motor part number XY12345 </stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.engineering-task.top-level" xlink:type="simple" description="Description of the top-level engineering task (e.g. development of an AD driving function based on camera signals) (Recommended)">A variant of a window lifter based on the DDC platform is to be developed.
+This application is a low cost variant.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.engineering-task.specific" xlink:type="simple" description="Description of the specific engineering task (e.g. detection of critical occlusions when turning right with pedestrians) (Recommended)">The sub-task here is to make a pre-selection for a suitable DC electric motor in the early phase of the project. 
+    - It is to be examined whether the DC motor with the type part number XY12346 is suitable in principle. 
+    - Rationale: The DC motor type part number XY12345 is already used in automotive projects and meets the specific requirements for the application (temperature, vibration resistance, ...).</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.simulation-task.target" xlink:type="simple" description="The simulation service target details the scope of the ordered simulation service with respect to the engineering task (e.g. assessment of the camera resolution by simulation) (Mandatory)">- Implementation and execution of a simulation based on a simple DC motor model. 
+  - The effects which should be considered and neglected should be agreed on with experts.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.simulation-task.objectives" xlink:type="simple" description="Simulation objectives describe the quantities of interest and the target values (e.g. the distance between vehicle and pedestrian must be higher than 1.5m) (Mandatory)">The DC motor must be able to accelerate from 0 to 50 rad/s within 0.5 s at 12 V applied voltage and a load torque of -0.5 Nm.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.simulation-task.explanation" xlink:type="simple" description="Explanation why simulation was chosen as solution approach for the engineering task (Optional)">Rationale: Same approach in similar engineering tasks was performed successfully.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.quality-aspects" xlink:type="simple" description="Quality aspects according to the criticality of the decision of the simulation task. (Mandatory)">- Potential risk and damage in case of misjudgement limited (additional development effort &lt; 4 person weeks). 
+  - Sufficient validation of the results and tools used by expert opinion and plausibility tests.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.verification" xlink:type="simple" description="Verification aspects according to the criticality of the decision of the simulation task. (Mandatory)">verification of the results and models, tools used by expert opinion and plausibility tests.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="objectives.validation" xlink:type="simple" description="Validation aspects according to the criticality of the decision of the simulation task (Mandatory)">Validation of the results by expert opinion and plausibility tests.</stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:AnalyzeSimulationTaskAndObjectives>
+        <stmd:VerifyAnalysis>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#da95ed7cb-8424-45bc-ae34-2f53e560c20e"/>
+                <stc:ResourceReference xlink:href="#ddc43aff1-7785-4f77-b26e-3448a05ad63c"/>
+                <stc:ResourceReference xlink:href="#d41aae674-42e0-4255-af27-fc3001e5a4b5"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="1-2-Analyze-Execution.md" id="dde5ff0b7-c9ab-451f-81d2-84b9d5024c21"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="1-2-Analyze-Outputs.md" id="dcd8a1b77-91bf-4364-83f1-344045343067"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="1-2-Analyze-Rationale.md" id="d2e486c29-3bb4-4300-9bec-5fa0f1eeadaf"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+        </stmd:VerifyAnalysis>
+        <stc:LifeCycleInformation/>
+    </stmd:AnalysisPhase>
+    <stmd:RequirementsPhase>
+        <stmd:DefineModelRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:Resource kind="document" type="text/markdown" source="2-2-Request-CSP-Requirements-Inputs.md" id="d4349a9be-1368-4194-9c5e-fbe4b4e16fcd"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-2-Requirements-Execution.md" id="d7c1432ed-80c0-4240-91c9-3aeda3add104"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-2-Requirements-Outputs.md" id="deb29a43f-4941-4246-bc7d-b82c9fa43a29"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.models.purpose-objectives" xlink:type="simple" description="purpose and objectives for model (Mandatory)">Pre-selection of a DC-motor for a window lifter application. A simple simulation model which contains the basic physical effect is used
+
+</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.models.subject-information.modelled-entity" xlink:type="simple" description="What should be modelled (Mandatory)">DC-motor</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.models.effects-considered" xlink:type="simple" description="effects which should be modeled (Mandatory)">basic physical effects are used (see figure pdf in inputs Phase 1 Analyse). Two models: Model for electro-magnetic part, model for mechanical part.</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.models.effects-neglected" xlink:type="simple" description="Effects which are neglected&quot;&gt;L2 Mandatory">Commutation effects (losses are/should considered in R)
+Eddy currents 
+Friction (should be added to Mload)</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.models.quality-requirements" xlink:type="simple" description="Quality requirements for the model (Mandatory)">- Specific test for model for mechanical part: Test with 1 Nm,  until 1500 rad/s are achieved.
+- Assurance of the results and used resources by expert assessment and plausibility tests is sufficient.</stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineModelRequirements>
+        <stmd:DefineParameterRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:Resource kind="document" type="text/markdown" source="2-3-Request-CSP-Requirements-Inputs.md" id="d4e9ba7fd-d85d-4d44-aed0-2397a09867cc"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+                <stc:Resource kind="document" type="application/pdf" source="2-3-DC-Motor-Datasheet.pdf" id="d8e431528-705c-4e5f-9bff-d78964793c15"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-3-Requirements-Execution.md" id="d1f57544d-d2ef-4c40-bf4a-6dbade0b9c2f"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-3-Requirements-Outputs.md" id="d51179eff-ab4f-4dc6-8878-e59796e73a3d"/>
+                <stc:ResourceReference xlink:href="#d8e431528-705c-4e5f-9bff-d78964793c15"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.parameters.quality-requirements" xlink:type="simple" description="Quality requirements for the parameters, data pedigree (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.parameters.tolerances-uncertatinty" xlink:type="simple" description="information about required tolerances, uncertainties (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.parameters.subject-information.parametrized-entity" xlink:type="simple" description="Connection to specified measurement, data sheet (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineParameterRequirements>
+        <stmd:DefineSimulationEnvironmentRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:Resource kind="document" type="text/markdown" source="2-5-Request-CSP-Requirements-Inputs.md" id="d72ee03d1-ca64-4d5a-95e4-e0ab6d87dbef"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-5-Requirements-Execution.md" id="db317c05a-3e0d-442e-b4a7-ad203059287d"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-5-Requirements-Outputs.md" id="d31743af3-a40a-4135-a2df-7406523a00f8"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.simulation-environment.quality-requirements" xlink:type="simple" description="uality requirements for the simulation environment (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.simulation-environment.purpose" xlink:type="simple" description="i.e. type of tool (i.e. FEM, capability of FMI cosimulation) (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineSimulationEnvironmentRequirements>
+        <stmd:DefineSimulationIntegrationRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:Resource kind="document" type="text/markdown" source="2-1-Request-CSP-Requirements-Inputs.md" id="d6bcafcf1-0074-4ba9-9ebe-869b636838f6"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-1-Requirements-Execution.md" id="df6386c41-ac8f-4b70-a116-f91f59926e6c"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-1-Requirements-Outputs.md" id="d2af0fc64-9ac4-460e-b463-0e0e86b0e132"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.simulation-integration" xlink:type="simple" description="requirements for the assembly and interaction of the elements of the simulation setup, execution and evaluation, including operation range (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.simulation-integration.quality-requirements" xlink:type="simple" description="Quality requirements for the simulation integration (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineSimulationIntegrationRequirements>
+        <stmd:DefineTestCaseRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:Resource kind="document" type="text/markdown" source="2-4-Request-CSP-Requirements-Inputs.md" id="d165a26ae-d3c3-4645-b1db-35ef033a484b"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-4-Requirements-Execution.md" id="d26665886-56d0-44e4-b5b8-86eef235ff58"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-4-Requirements-Outputs.md" id="dcb6e7848-8c21-4b5a-af4c-2af4ef45a674"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.test-cases" xlink:type="simple" description="what should be covered by the test cases i.e FTP75 cycle, load cycle (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="requirements.test-cases.quality-requirements" xlink:type="simple" description="Quality requirements for the test cases (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineTestCaseRequirements>
+        <stmd:DefineQualityAssuranceRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#da95ed7cb-8424-45bc-ae34-2f53e560c20e"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-6-Requirements-Execution.md" id="dd5fd3222-cb80-4fbe-aabf-5147f6ea43ca"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-6-Requirements-Outputs.md" id="d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.quality-assurance" xlink:type="simple" description="requirements for quality assurance (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineQualityAssuranceRequirements>
+        <stmd:VerifyRequirements>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#deb29a43f-4941-4246-bc7d-b82c9fa43a29"/>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#dcb6e7848-8c21-4b5a-af4c-2af4ef45a674"/>
+                <stc:ResourceReference xlink:href="#da95ed7cb-8424-45bc-ae34-2f53e560c20e"/>
+                <stc:ResourceReference xlink:href="#d31743af3-a40a-4135-a2df-7406523a00f8"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d2af0fc64-9ac4-460e-b463-0e0e86b0e132"/>
+                <stc:ResourceReference xlink:href="#d51179eff-ab4f-4dc6-8878-e59796e73a3d"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="2-7-Requirements-Execution.md" id="d59a023c7-f2c0-4a0e-936f-e6da3bcfb62e"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="2-7-Requirements-Outputs.md" id="d02e833f6-2330-4934-8a22-6cb752c37e91"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="2-7-Requirements-Rationale.md" id="d75e43d59-7665-4024-ae6f-90d92208a21b"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="requirements.verification" xlink:type="simple" description="Result of the verification of the requirement (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:VerifyRequirements>
+        <stc:LifeCycleInformation/>
+    </stmd:RequirementsPhase>
+    <stmd:DesignPhase>
+        <stmd:DefineModelDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#deb29a43f-4941-4246-bc7d-b82c9fa43a29"/>
+                <stc:Resource kind="document" type="text/markdown" source="3-2-Request-CSP-Design-Inputs.md" id="d8fa2cc4e-33da-46ea-acb2-c78d136af22a"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-2-Design-Execution.md" id="d334a7862-b338-48ce-a2a6-938fd315aa57"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-2-Design-Outputs.md" id="d5c33fce5-4e6b-498d-9d0e-4040e5833144"/>
+                <stc:Resource kind="document" type="application/x-ssp-definition" source="Design-Specification-DC-Motor-Model.ssd" id="d7a4c65b2-4c2d-44e5-89c8-1c000b81486a"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.models" xlink:type="simple" description="Design specification for models i.e. structure, interfaces, modeling approach (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="design.models.quality-requirements" xlink:type="simple" description="quality requirements for the design (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineModelDesignSpecification>
+        <stmd:DefineParameterDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d51179eff-ab4f-4dc6-8878-e59796e73a3d"/>
+                <stc:Resource kind="document" type="text/markdown" source="3-3-Request-CSP-Design-Inputs.md" id="df1259996-6085-44c7-85b9-79ffa394ecce"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-3-Design-Execution.md" id="dff6cc6f4-f009-4391-b372-fa0b1467faad"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-3-Design-Outputs.md" id="d23beb928-8dca-450c-8d43-bd115626c57f"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="3-3-Design-Rationale.md" id="d41c33740-0252-46fd-b260-ce65e15c0410"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.parameters" xlink:type="simple" description="i.e format, test environment, links to data sheets, measurements, material data, specifications on handling tolerances, uncertainties (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="design.parameters.quality-requirements" xlink:type="simple" description="uality requirements for the design of the paramter (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineParameterDesignSpecification>
+        <stmd:DefineSimulationEnvironmentDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d31743af3-a40a-4135-a2df-7406523a00f8"/>
+                <stc:Resource kind="document" type="text/markdown" source="3-5-Request-CSP-Design-Inputs.md" id="d361efb8b-8008-42d7-8392-49b1fc22f80e"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-5-Design-Execution.md" id="d0e86bb91-1281-463e-9cdb-6b7b6d067a2a"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-5-Design-Outputs.md" id="d065b7ef0-abb4-4d20-a541-8caa16f734ac"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="3-5-Design-Rationale.md" id="d33c84175-268d-4a8f-a65b-bd6746789889"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.simulation-environment" xlink:type="simple" description="i.e. which simulation tool, version (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="esign.simulation-environment.quality-requirements" xlink:type="simple" description="Quality requirements for the design of the simulation environment (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineSimulationEnvironmentDesignSpecification>
+        <stmd:DefineSimulationIntegrationDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d2af0fc64-9ac4-460e-b463-0e0e86b0e132"/>
+                <stc:Resource kind="document" type="text/markdown" source="3-1-Request-CSP-Design-Inputs.md" id="d3ac53639-3b9c-44c5-a52b-f836da6f1586"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-1-Design-Execution.md" id="d49017eba-c8a4-4f3a-bfcf-c2f8e5087e1b"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-1-Design-Outputs.md" id="d86234840-dc22-42a9-99ef-22d91ea2a21d"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.simulation-integration" xlink:type="simple" description="design specification for the assembly and interaction of the elements of the simulation setup, execution and evaluation, including operation range (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="design.simulation-integration.quality-requirements" xlink:type="simple" description="Quality requirements for the design of the simulation integration (models, parameters, simulation environment, tests, and their interaction) (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineSimulationIntegrationDesignSpecification>
+        <stmd:DefineTestCaseDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#dcb6e7848-8c21-4b5a-af4c-2af4ef45a674"/>
+                <stc:Resource kind="document" type="text/markdown" source="3-4-Request-CSP-Design-Inputs.md" id="d1c578762-5c31-4c07-b26f-d29c6bdeb364"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-4-Design-Execution.md" id="d75c1486e-9231-43bf-8ed9-771b479aa11e"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-4-Design-Outputs.md" id="d24258729-122f-453f-92e1-f1d421c4c459"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="3-4-Design-Rationale.md" id="df4f510cd-c382-4227-ba47-f357705c8d06"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.test-cases" xlink:type="simple" description="i.e. formats, structure, clarification test environment (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="design.test-cases.quality-requirements" xlink:type="simple" description="quality requirements for the design of the test cases (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineTestCaseDesignSpecification>
+        <stmd:DefineQualityAssuranceDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#deb29a43f-4941-4246-bc7d-b82c9fa43a29"/>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#dcb6e7848-8c21-4b5a-af4c-2af4ef45a674"/>
+                <stc:ResourceReference xlink:href="#d31743af3-a40a-4135-a2df-7406523a00f8"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d2af0fc64-9ac4-460e-b463-0e0e86b0e132"/>
+                <stc:ResourceReference xlink:href="#d51179eff-ab4f-4dc6-8878-e59796e73a3d"/>
+                <stc:ResourceReference xlink:href="#d02e833f6-2330-4934-8a22-6cb752c37e91"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-6-Design-Execution.md" id="dd4f57377-93d4-4d0a-bc7f-368e48cde166"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-6-Design-Outputs.md" id="d9588a03a-76ea-459c-8d27-a1fab0a36eb3"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.quality-assurance" xlink:type="simple" description="Design specification for quality assurance (can be test, review, etc.) for the simulation and the simulation set up (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DefineQualityAssuranceDesignSpecification>
+        <stmd:VerifyDesignSpecification>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d24258729-122f-453f-92e1-f1d421c4c459"/>
+                <stc:ResourceReference xlink:href="#deb29a43f-4941-4246-bc7d-b82c9fa43a29"/>
+                <stc:ResourceReference xlink:href="#dcb6e7848-8c21-4b5a-af4c-2af4ef45a674"/>
+                <stc:ResourceReference xlink:href="#d065b7ef0-abb4-4d20-a541-8caa16f734ac"/>
+                <stc:ResourceReference xlink:href="#d86234840-dc22-42a9-99ef-22d91ea2a21d"/>
+                <stc:ResourceReference xlink:href="#d5c33fce5-4e6b-498d-9d0e-4040e5833144"/>
+                <stc:ResourceReference xlink:href="#d2e486c29-3bb4-4300-9bec-5fa0f1eeadaf"/>
+                <stc:ResourceReference xlink:href="#d31743af3-a40a-4135-a2df-7406523a00f8"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d1f57544d-d2ef-4c40-bf4a-6dbade0b9c2f"/>
+                <stc:ResourceReference xlink:href="#d9588a03a-76ea-459c-8d27-a1fab0a36eb3"/>
+                <stc:ResourceReference xlink:href="#d23beb928-8dca-450c-8d43-bd115626c57f"/>
+                <stc:ResourceReference xlink:href="#d2af0fc64-9ac4-460e-b463-0e0e86b0e132"/>
+                <stc:ResourceReference xlink:href="#d02e833f6-2330-4934-8a22-6cb752c37e91"/>
+                <stc:ResourceReference xlink:href="#dcd8a1b77-91bf-4364-83f1-344045343067"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="3-7-Design-Execution.md" id="d614d3fa2-3980-4dc1-b190-9ee51d936974"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="3-7-Design-Outputs.md" id="da3979716-2aa3-4032-ae9e-cbbf4bdfd034"/>
+            </stc:Output>
+            <stc:Rationale>
+                <stc:Resource kind="document" type="text/markdown" source="3-7-Design-Rationale.md" id="dbc0f56da-8f86-41e2-89a5-2f6b2dba225e"/>
+            </stc:Rationale>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="design.verification" xlink:type="simple" description="Result of design specification verification (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:VerifyDesignSpecification>
+        <stc:LifeCycleInformation/>
+    </stmd:DesignPhase>
+    <stmd:ImplementationPhase>
+        <stmd:ImplementModel>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d5c33fce5-4e6b-498d-9d0e-4040e5833144"/>
+                <stc:Resource kind="document" type="application/x-ssp-definition" source="../../Design-Specification-DC-Motor-Model.ssd" id="d2544220c-dbd9-4eca-81d4-caf932c4b996"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-1-Implement-Execution.md" id="d40c4d4a2-72e6-43b9-b0ca-724a530624e5"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-1-Implement-Outputs.md" id="d11f362e6-e521-4054-9602-d665aaef48a1"/>
+                <stc:Resource kind="document" type="image/png" source="Screenshot-accelerated-mass.png" id="d513e8e55-1f5d-48d6-8e1d-17561b4ef1f2"/>
+                <stc:Resource kind="document" type="application/x-srmd-meta-data" source="DC-Motor-el.srmd" id="d3d0a7e14-3d4b-41ad-a18a-d1399b5bcaf1">
+                    <stc:Classification type="org.mic-core.mic-core" description="MIC Core is defining a standard of core attributes (key information on simulation models that enables proper useage in the usecases) that other standards can adopt, extend, refine. Goal is to have a set of aligned attributes, that means&#10;&#10;- we are focussing on meta data for simulation models&#10;- also link to further detailed information which is needed for deeper traceability&#10;&#10;The development of MIC Core was prompted by the Model Identity Card (MIC) and other metadata standards and the realization that certain core attributes should be standardized across the different metadata standards." xlink:type="simple" xlink:href="https://mic-core.github.io/MIC-Core/main/">
+                        <stc:ClassificationEntry keyword="administrative-data.model.name" xlink:type="simple" description="Human-readable way of referring to the model. Usually short and clear. Not necessarily unique. To be distinguished from the model identifier and file name.">DC-Moror-el</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.identifier" xlink:type="simple" description="Unique identifier for the model. Possibly only locally unique, within a given IT system. May not be specific to a given release of the model. The syntax and interpretation of the identifier is not standardized and open to the implementer. Can for example be based on a URI, a model path, or a UUID."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.description" xlink:type="simple" description="Human-readable, textual, general overview. Highlights important information about the model. May include some information formalized in other attributes, without expectation of completeness."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.supplier" xlink:type="simple" description="The responsible body and, if applicable, organizational unit within the body, that is responsible for supplying the model. Can bedifferent from the owner or the creator of the model. Should be as specific as possible but also durable, avoiding for example specific people names. Relevant personal data protection guidelines should be takend into account. In case of model assembly, responsible of the overall assembly."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.confidentiality-level" xlink:type="simple" description="Protection level to apply to the model. Does not specify the organizational scope. Does not define what a receiver is allowed todo or is not allowed to do. Values should be &quot;0: public&quot;, &quot;1: internal&quot;, &quot;2: confidential&quot; or &quot;3: strictly confidential&quot;. Additionalprocesses and tools are required to ensure confidentiality."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.legal-restriction" xlink:type="simple" description="Defines the rules governing the distribution and usage of the simulation model, including licensing, in the form of an open field:royalties to pay, restriction to noncommercial use, right to modify, related legal contract, etc."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release" xlink:type="simple" description="Unique identifier, preferably human-readable (i.e. semantically meaningfull), for the release of a particular simulation model.Represents the result of the intentional act of releasing a model at a particular stage to a particular audience (different from themore general notion of version).">V2.0</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.date" xlink:type="simple" description="Date, and possibly time and timezone, of the release of a simulation model. Must respect ISO 8601."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.type" xlink:type="simple" description="Relates to the maturity of the model. To be distinguished from a changing status (e.g. outdated). Fixed at the time of the releaseand not changing. Allows the receiver to evaluate the usage limitations of a given release (e.g. a prelease shall not be used forfinal system validation)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="purpose-objectives.model" xlink:type="simple" description="Purpose for which the model has been built/validated. Free textual field for short human-readable description."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="subject-information.modelled-entity" xlink:type="simple" description="Name or description of the object represented by the simulation model."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.modeling-choice" xlink:type="simple" description="Explanation of the modeling choices, assumptions or simplifications made during the implementation of the model. It shouldinclude:1) effects or phenomena covered introduced in general terms, such as vibration of thermal effects, and detailed;2) how they are covered (in an acausal approach, with a look-up table based on experimental data, etc.).3) typical keywords which permit to facilitate information retrieval (e.g. “Causal”, “Acausal”, “Bond graph”, “Transfer function”)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.limitations" xlink:type="simple" description="Restrictions on the use of the model. Especially important if these restrictions are not self-evident to a user (e.g. when the modelprovides an incorrect result)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.classification" xlink:type="simple" description="Keyword-based classifications of the model in terms, for example, of physics, engineering or implementation. Can refer tostandard or locally standard schemes. It is recommended to refer to a scheme with the reverse domain notation prefix."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.software-hardware-environment-requirements" xlink:type="simple" description="Requirements regarding the software and hardware environment of the model, such as specific tool versions required or hardwarerequired to achieve sufficient perfomance."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.verification-status" xlink:type="simple" description="Indicates whether a given verification procedure has been followed to successfully reach verification criteria. Verification permitsto confirm that a simulation technically works (code without bug, convergence of discretized models, etc.)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.validation-status" xlink:type="simple" description="Indicates whether a given validation procedure has been followed to successfully reach validation criteria. Validation permits toconfirm that a simulation fulfills user needs. For example, validation permits to confirm that a simulation is close enough to areference given particular needs."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.procedure-criteria" xlink:type="simple" description="Steps and methods followed as well as criteria to reach. Verification and validation can be covered together or separately."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.report" xlink:type="simple" description="Reports describing the results of the verification and validation. Verification and validation can be covered together or separately.Can be summaries, to facilitate communication and distribution. Typically a link to a report."></stc:ClassificationEntry>
+                    </stc:Classification>
+                </stc:Resource>
+                <stc:Resource kind="document" type="application/x-srmd-meta-data" source="DC-Motor-mech.srmd" id="d285e6724-b674-4f48-b42e-7e47726888f0">
+                    <stc:Classification type="org.mic-core.mic-core" description="MIC Core is defining a standard of core attributes (key information on simulation models that enables proper useage in the usecases) that other standards can adopt, extend, refine. Goal is to have a set of aligned attributes, that means&#10;&#10;- we are focussing on meta data for simulation models&#10;- also link to further detailed information which is needed for deeper traceability&#10;&#10;The development of MIC Core was prompted by the Model Identity Card (MIC) and other metadata standards and the realization that certain core attributes should be standardized across the different metadata standards." xlink:type="simple" xlink:href="https://mic-core.github.io/MIC-Core/main/">
+                        <stc:ClassificationEntry keyword="administrative-data.model.name" xlink:type="simple" description="Human-readable way of referring to the model. Usually short and clear. Not necessarily unique. To be distinguished from the model identifier and file name.">DC-motor-mech</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.identifier" xlink:type="simple" description="Unique identifier for the model. Possibly only locally unique, within a given IT system. May not be specific to a given release of the model. The syntax and interpretation of the identifier is not standardized and open to the implementer. Can for example be based on a URI, a model path, or a UUID."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.description" xlink:type="simple" description="Human-readable, textual, general overview. Highlights important information about the model. May include some information formalized in other attributes, without expectation of completeness."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.supplier" xlink:type="simple" description="The responsible body and, if applicable, organizational unit within the body, that is responsible for supplying the model. Can bedifferent from the owner or the creator of the model. Should be as specific as possible but also durable, avoiding for example specific people names. Relevant personal data protection guidelines should be takend into account. In case of model assembly, responsible of the overall assembly."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.confidentiality-level" xlink:type="simple" description="Protection level to apply to the model. Does not specify the organizational scope. Does not define what a receiver is allowed todo or is not allowed to do. Values should be &quot;0: public&quot;, &quot;1: internal&quot;, &quot;2: confidential&quot; or &quot;3: strictly confidential&quot;. Additionalprocesses and tools are required to ensure confidentiality."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.legal-restriction" xlink:type="simple" description="Defines the rules governing the distribution and usage of the simulation model, including licensing, in the form of an open field:royalties to pay, restriction to noncommercial use, right to modify, related legal contract, etc."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release" xlink:type="simple" description="Unique identifier, preferably human-readable (i.e. semantically meaningfull), for the release of a particular simulation model.Represents the result of the intentional act of releasing a model at a particular stage to a particular audience (different from themore general notion of version).">V2.1</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.date" xlink:type="simple" description="Date, and possibly time and timezone, of the release of a simulation model. Must respect ISO 8601."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.type" xlink:type="simple" description="Relates to the maturity of the model. To be distinguished from a changing status (e.g. outdated). Fixed at the time of the releaseand not changing. Allows the receiver to evaluate the usage limitations of a given release (e.g. a prelease shall not be used forfinal system validation)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="purpose-objectives.model" xlink:type="simple" description="Purpose for which the model has been built/validated. Free textual field for short human-readable description."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="subject-information.modelled-entity" xlink:type="simple" description="Name or description of the object represented by the simulation model."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.modeling-choice" xlink:type="simple" description="Explanation of the modeling choices, assumptions or simplifications made during the implementation of the model. It shouldinclude:1) effects or phenomena covered introduced in general terms, such as vibration of thermal effects, and detailed;2) how they are covered (in an acausal approach, with a look-up table based on experimental data, etc.).3) typical keywords which permit to facilitate information retrieval (e.g. “Causal”, “Acausal”, “Bond graph”, “Transfer function”)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.limitations" xlink:type="simple" description="Restrictions on the use of the model. Especially important if these restrictions are not self-evident to a user (e.g. when the modelprovides an incorrect result)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.classification" xlink:type="simple" description="Keyword-based classifications of the model in terms, for example, of physics, engineering or implementation. Can refer tostandard or locally standard schemes. It is recommended to refer to a scheme with the reverse domain notation prefix."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.software-hardware-environment-requirements" xlink:type="simple" description="Requirements regarding the software and hardware environment of the model, such as specific tool versions required or hardwarerequired to achieve sufficient perfomance."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.verification-status" xlink:type="simple" description="Indicates whether a given verification procedure has been followed to successfully reach verification criteria. Verification permitsto confirm that a simulation technically works (code without bug, convergence of discretized models, etc.)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.validation-status" xlink:type="simple" description="Indicates whether a given validation procedure has been followed to successfully reach validation criteria. Validation permits toconfirm that a simulation fulfills user needs. For example, validation permits to confirm that a simulation is close enough to areference given particular needs."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.procedure-criteria" xlink:type="simple" description="Steps and methods followed as well as criteria to reach. Verification and validation can be covered together or separately."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.report" xlink:type="simple" description="Reports describing the results of the verification and validation. Verification and validation can be covered together or separately.Can be summaries, to facilitate communication and distribution. Typically a link to a report."></stc:ClassificationEntry>
+                    </stc:Classification>
+                </stc:Resource>
+                <stc:Resource kind="document" type="application/x-srmd-meta-data" source="DC-Motor-MH48.srmd" id="df27f0edd-d9f8-48ed-8c33-fd963209c7ca">
+                    <stc:Classification type="org.mic-core.mic-core" description="MIC Core is defining a standard of core attributes (key information on simulation models that enables proper useage in the usecases) that other standards can adopt, extend, refine. Goal is to have a set of aligned attributes, that means&#10;&#10;- we are focussing on meta data for simulation models&#10;- also link to further detailed information which is needed for deeper traceability&#10;&#10;The development of MIC Core was prompted by the Model Identity Card (MIC) and other metadata standards and the realization that certain core attributes should be standardized across the different metadata standards." xlink:type="simple" xlink:href="https://mic-core.github.io/MIC-Core/main/">
+                        <stc:ClassificationEntry keyword="administrative-data.model.name" xlink:type="simple" description="Human-readable way of referring to the model. Usually short and clear. Not necessarily unique. To be distinguished from the model identifier and file name.">DC-Motor-MH-48</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.identifier" xlink:type="simple" description="Unique identifier for the model. Possibly only locally unique, within a given IT system. May not be specific to a given release of the model. The syntax and interpretation of the identifier is not standardized and open to the implementer. Can for example be based on a URI, a model path, or a UUID."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.description" xlink:type="simple" description="Human-readable, textual, general overview. Highlights important information about the model. May include some information formalized in other attributes, without expectation of completeness."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.supplier" xlink:type="simple" description="The responsible body and, if applicable, organizational unit within the body, that is responsible for supplying the model. Can bedifferent from the owner or the creator of the model. Should be as specific as possible but also durable, avoiding for example specific people names. Relevant personal data protection guidelines should be takend into account. In case of model assembly, responsible of the overall assembly."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.confidentiality-level" xlink:type="simple" description="Protection level to apply to the model. Does not specify the organizational scope. Does not define what a receiver is allowed todo or is not allowed to do. Values should be &quot;0: public&quot;, &quot;1: internal&quot;, &quot;2: confidential&quot; or &quot;3: strictly confidential&quot;. Additionalprocesses and tools are required to ensure confidentiality."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.legal-restriction" xlink:type="simple" description="Defines the rules governing the distribution and usage of the simulation model, including licensing, in the form of an open field:royalties to pay, restriction to noncommercial use, right to modify, related legal contract, etc."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release" xlink:type="simple" description="Unique identifier, preferably human-readable (i.e. semantically meaningfull), for the release of a particular simulation model.Represents the result of the intentional act of releasing a model at a particular stage to a particular audience (different from themore general notion of version).">V2.1</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.date" xlink:type="simple" description="Date, and possibly time and timezone, of the release of a simulation model. Must respect ISO 8601."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.type" xlink:type="simple" description="Relates to the maturity of the model. To be distinguished from a changing status (e.g. outdated). Fixed at the time of the releaseand not changing. Allows the receiver to evaluate the usage limitations of a given release (e.g. a prelease shall not be used forfinal system validation)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="purpose-objectives.model" xlink:type="simple" description="Purpose for which the model has been built/validated. Free textual field for short human-readable description."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="subject-information.modelled-entity" xlink:type="simple" description="Name or description of the object represented by the simulation model."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.modeling-choice" xlink:type="simple" description="Explanation of the modeling choices, assumptions or simplifications made during the implementation of the model. It shouldinclude:1) effects or phenomena covered introduced in general terms, such as vibration of thermal effects, and detailed;2) how they are covered (in an acausal approach, with a look-up table based on experimental data, etc.).3) typical keywords which permit to facilitate information retrieval (e.g. “Causal”, “Acausal”, “Bond graph”, “Transfer function”)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.limitations" xlink:type="simple" description="Restrictions on the use of the model. Especially important if these restrictions are not self-evident to a user (e.g. when the modelprovides an incorrect result)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.classification" xlink:type="simple" description="Keyword-based classifications of the model in terms, for example, of physics, engineering or implementation. Can refer tostandard or locally standard schemes. It is recommended to refer to a scheme with the reverse domain notation prefix."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.software-hardware-environment-requirements" xlink:type="simple" description="Requirements regarding the software and hardware environment of the model, such as specific tool versions required or hardwarerequired to achieve sufficient perfomance."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.verification-status" xlink:type="simple" description="Indicates whether a given verification procedure has been followed to successfully reach verification criteria. Verification permitsto confirm that a simulation technically works (code without bug, convergence of discretized models, etc.)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.validation-status" xlink:type="simple" description="Indicates whether a given validation procedure has been followed to successfully reach validation criteria. Validation permits toconfirm that a simulation fulfills user needs. For example, validation permits to confirm that a simulation is close enough to areference given particular needs."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.procedure-criteria" xlink:type="simple" description="Steps and methods followed as well as criteria to reach. Verification and validation can be covered together or separately."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.report" xlink:type="simple" description="Reports describing the results of the verification and validation. Verification and validation can be covered together or separately.Can be summaries, to facilitate communication and distribution. Typically a link to a report."></stc:ClassificationEntry>
+                    </stc:Classification>
+                </stc:Resource>
+                <stc:Resource kind="document" type="application/x-srmd-meta-data" source="Stimuli.srmd" id="de1570f22-4774-43e8-94c2-dac902ee43ae">
+                    <stc:Classification type="org.mic-core.mic-core" description="MIC Core is defining a standard of core attributes (key information on simulation models that enables proper useage in the usecases) that other standards can adopt, extend, refine. Goal is to have a set of aligned attributes, that means&#10;&#10;- we are focussing on meta data for simulation models&#10;- also link to further detailed information which is needed for deeper traceability&#10;&#10;The development of MIC Core was prompted by the Model Identity Card (MIC) and other metadata standards and the realization that certain core attributes should be standardized across the different metadata standards." xlink:type="simple" xlink:href="https://mic-core.github.io/MIC-Core/main/">
+                        <stc:ClassificationEntry keyword="administrative-data.model.name" xlink:type="simple" description="Human-readable way of referring to the model. Usually short and clear. Not necessarily unique. To be distinguished from the model identifier and file name.">Stimuli</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.identifier" xlink:type="simple" description="Unique identifier for the model. Possibly only locally unique, within a given IT system. May not be specific to a given release of the model. The syntax and interpretation of the identifier is not standardized and open to the implementer. Can for example be based on a URI, a model path, or a UUID."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.description" xlink:type="simple" description="Human-readable, textual, general overview. Highlights important information about the model. May include some information formalized in other attributes, without expectation of completeness."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.supplier" xlink:type="simple" description="The responsible body and, if applicable, organizational unit within the body, that is responsible for supplying the model. Can bedifferent from the owner or the creator of the model. Should be as specific as possible but also durable, avoiding for example specific people names. Relevant personal data protection guidelines should be takend into account. In case of model assembly, responsible of the overall assembly."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.model.confidentiality-level" xlink:type="simple" description="Protection level to apply to the model. Does not specify the organizational scope. Does not define what a receiver is allowed todo or is not allowed to do. Values should be &quot;0: public&quot;, &quot;1: internal&quot;, &quot;2: confidential&quot; or &quot;3: strictly confidential&quot;. Additionalprocesses and tools are required to ensure confidentiality."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.legal-restriction" xlink:type="simple" description="Defines the rules governing the distribution and usage of the simulation model, including licensing, in the form of an open field:royalties to pay, restriction to noncommercial use, right to modify, related legal contract, etc."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release" xlink:type="simple" description="Unique identifier, preferably human-readable (i.e. semantically meaningfull), for the release of a particular simulation model.Represents the result of the intentional act of releasing a model at a particular stage to a particular audience (different from themore general notion of version).">V2.0</stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.date" xlink:type="simple" description="Date, and possibly time and timezone, of the release of a simulation model. Must respect ISO 8601."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="administrative-data.release.type" xlink:type="simple" description="Relates to the maturity of the model. To be distinguished from a changing status (e.g. outdated). Fixed at the time of the releaseand not changing. Allows the receiver to evaluate the usage limitations of a given release (e.g. a prelease shall not be used forfinal system validation)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="purpose-objectives.model" xlink:type="simple" description="Purpose for which the model has been built/validated. Free textual field for short human-readable description."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="subject-information.modelled-entity" xlink:type="simple" description="Name or description of the object represented by the simulation model."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.modeling-choice" xlink:type="simple" description="Explanation of the modeling choices, assumptions or simplifications made during the implementation of the model. It shouldinclude:1) effects or phenomena covered introduced in general terms, such as vibration of thermal effects, and detailed;2) how they are covered (in an acausal approach, with a look-up table based on experimental data, etc.).3) typical keywords which permit to facilitate information retrieval (e.g. “Causal”, “Acausal”, “Bond graph”, “Transfer function”)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.limitations" xlink:type="simple" description="Restrictions on the use of the model. Especially important if these restrictions are not self-evident to a user (e.g. when the modelprovides an incorrect result)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.model.classification" xlink:type="simple" description="Keyword-based classifications of the model in terms, for example, of physics, engineering or implementation. Can refer tostandard or locally standard schemes. It is recommended to refer to a scheme with the reverse domain notation prefix."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="implementation.software-hardware-environment-requirements" xlink:type="simple" description="Requirements regarding the software and hardware environment of the model, such as specific tool versions required or hardwarerequired to achieve sufficient perfomance."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.verification-status" xlink:type="simple" description="Indicates whether a given verification procedure has been followed to successfully reach verification criteria. Verification permitsto confirm that a simulation technically works (code without bug, convergence of discretized models, etc.)."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.validation-status" xlink:type="simple" description="Indicates whether a given validation procedure has been followed to successfully reach validation criteria. Validation permits toconfirm that a simulation fulfills user needs. For example, validation permits to confirm that a simulation is close enough to areference given particular needs."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.procedure-criteria" xlink:type="simple" description="Steps and methods followed as well as criteria to reach. Verification and validation can be covered together or separately."></stc:ClassificationEntry>
+                        <stc:ClassificationEntry keyword="verification-validation.report" xlink:type="simple" description="Reports describing the results of the verification and validation. Verification and validation can be covered together or separately.Can be summaries, to facilitate communication and distribution. Typically a link to a report."></stc:ClassificationEntry>
+                    </stc:Classification>
+                </stc:Resource>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.model.quality" xlink:type="simple" description="Information for quality assurance (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.model.version" xlink:type="simple" description="version of simulation model (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.model.name" xlink:type="simple" description="name of simulation model (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:ImplementModel>
+        <stmd:ImplementParameter>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d23beb928-8dca-450c-8d43-bd115626c57f"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-2-Implement-Execution.md" id="d3352cb9b-f130-445b-8d72-6536c7555981"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-2-Implement-Outputs.md" id="db112c6e8-4603-49aa-b339-58b99eb7a72d"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.parameters.name" xlink:type="simple" description="name of parameter (set) (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.parameters.version" xlink:type="simple" description="version of parameter (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.paramters.quality" xlink:type="simple" description="Information for quality assurance is provided (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:ImplementParameter>
+        <stmd:ImplementSimulationEnvironment>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d065b7ef0-abb4-4d20-a541-8caa16f734ac"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-4-Implement-Execution.md" id="d64aef441-9bd4-4ac4-bb1f-945ea017a897"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-4-Implement-Outputs.md" id="dad2678f5-1506-4c28-84cb-529b0735def8"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.simulation-environment.name" xlink:type="simple" description="name of simulation tool (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.simulation-environment.version" xlink:type="simple" description="version of simulation tool (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.simulation-environment.quality" xlink:type="simple" description="nformation for quality assurance (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:ImplementSimulationEnvironment>
+        <stmd:ImplementTestCase>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d24258729-122f-453f-92e1-f1d421c4c459"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-3-Implement-Execution.md" id="d4ae4c570-f4d7-4655-b051-b89743be65df"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-3-Implement-Outputs.md" id="d3035eb36-323d-4349-815a-3cf8be3c14c3"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.test-cases.name" xlink:type="simple" description="names of the test cases (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.test-cases.version" xlink:type="simple" description="version of the test cases (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.test-cases.quality" xlink:type="simple" description="Information for quality assurance (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:ImplementTestCase>
+        <stmd:IntegrateSimulation>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#dad2678f5-1506-4c28-84cb-529b0735def8"/>
+                <stc:ResourceReference xlink:href="#d86234840-dc22-42a9-99ef-22d91ea2a21d"/>
+                <stc:ResourceReference xlink:href="#d11f362e6-e521-4054-9602-d665aaef48a1"/>
+                <stc:ResourceReference xlink:href="#d3035eb36-323d-4349-815a-3cf8be3c14c3"/>
+                <stc:ResourceReference xlink:href="#db112c6e8-4603-49aa-b339-58b99eb7a72d"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-5-Implement-Execution.md" id="d693cfc9e-6d44-47ef-be3f-56c2665f9a72"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-5-Implement-Outputs.md" id="d1fc5353a-bceb-44fc-8979-761172beaefe"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.simulation-integration.name" xlink:type="simple" description="Name of the Simulation setup (models, parameters, testcases in tool environment) (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.simulation-integration.setings" xlink:type="simple" description="Settings (solver,...) (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="implementation.simulation-integration.quality" xlink:type="simple" description="Information for quality assurance (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:IntegrateSimulation>
+        <stmd:AssureSimulationSetupQuality>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#da3979716-2aa3-4032-ae9e-cbbf4bdfd034"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d1fc5353a-bceb-44fc-8979-761172beaefe"/>
+                <stc:ResourceReference xlink:href="#d9588a03a-76ea-459c-8d27-a1fab0a36eb3"/>
+                <stc:ResourceReference xlink:href="#d02e833f6-2330-4934-8a22-6cb752c37e91"/>
+                <stc:ResourceReference xlink:href="#dcd8a1b77-91bf-4364-83f1-344045343067"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-6-Implement-Execution.md" id="d31558365-3ab4-4544-8c92-074ad683753e"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-6-Implement-Outputs.md" id="d8d4f4485-3f6d-4c81-9a4d-6d68de6e2d02"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.quality-assurance" xlink:type="simple" description="Quality assurance results (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:AssureSimulationSetupQuality>
+        <stmd:DeriveSimulationSetupQualityVerdict>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d8d4f4485-3f6d-4c81-9a4d-6d68de6e2d02"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="4-7-Implement-Execution.md" id="df411c52a-ad68-4e66-b1d6-f288a1510799"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="4-7-Implement-Outputs.md" id="d911027aa-711a-4875-b9b1-175f1657326a"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="implementation.verdict" xlink:type="simple" description="Quality verdict about simulation setup (optional)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DeriveSimulationSetupQualityVerdict>
+        <stc:LifeCycleInformation/>
+    </stmd:ImplementationPhase>
+    <stmd:ExecutionPhase>
+        <stmd:ExecuteSimulation>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d1fc5353a-bceb-44fc-8979-761172beaefe"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="5-Execute-Execution.md" id="db901c2fd-e462-48be-b5db-bc938db76a6e"/>
+                <stc:Resource kind="document" type="application/json" source="simulation3/config.json" id="d69a1e19d-b885-4601-bde5-adba746fd0a1"/>
+                <stc:Resource kind="document" type="application/json" source="simulation5/config.json" id="d229c158f-79d1-4a31-9d36-e8d796170cd8"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="5-Execute-Outputs.md" id="da16622b0-322f-4cec-8dfe-9b6faf6c8207"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation3/run1/results.csv" id="d2076960b-a0f7-41bd-b318-fb7b33f8a362"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation3/run1/results_sampled.csv" id="d8cf4b517-0473-481b-a121-83c079cb22bb"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation3/run1/generate.log" id="db2a97710-1bd3-4a1f-bfd3-940491784e64"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation3/run1/simulate.log" id="dfaf9210f-309f-4c09-a114-a2b287f764a4"/>
+                <stc:ResourceReference xlink:href="#d69a1e19d-b885-4601-bde5-adba746fd0a1"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run1/results.csv" id="d21a93d37-0d67-4ffa-a102-50e7029ffcf0"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run1/results_sampled.csv" id="d3c95ef4e-bea1-4f34-b61d-2e54995b544e"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run1/generate.log" id="d93668ab6-8866-4b14-beb6-5d909c610d03"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run1/simulate.log" id="d0a9b8c35-021c-4aa1-a09d-a77e043f2f1d"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run2/results.csv" id="dbe1b8092-584d-4766-ac11-722d0f683fb7"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run2/results_sampled.csv" id="da4d62b6d-576d-4926-af98-c2ffb7e0db29"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run2/generate.log" id="dfc68d4cc-a13c-44ad-aafc-74939a790f00"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run2/simulate.log" id="db2a79d18-32f2-4036-8a61-bc44191f37b2"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run3/results.csv" id="d28acdc30-2014-42ba-b9ae-9432e6a4235e"/>
+                <stc:Resource kind="result" type="text/csv" source="simulation5/run3/results_sampled.csv" id="dcd8f3d6b-c282-43d3-a629-422ac0f1ab4b"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run3/generate.log" id="deb747caf-70d8-4f84-bf9e-0ac9ab0c7181"/>
+                <stc:Resource kind="result" type="text/plain" source="simulation5/run3/simulate.log" id="dfbb1ba2c-f443-415d-ad79-76290abc03e5"/>
+                <stc:ResourceReference xlink:href="#d229c158f-79d1-4a31-9d36-e8d796170cd8"/>
+                <stc:Resource kind="document" type="image/png" source="Screenshot-DC-Motor-variants-R.png" id="dc43504a9-a88f-4aae-a44c-28e4ec187ec6"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="execution.data" xlink:type="simple" description="(raw) data from execution (Recommended)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.model.names" xlink:type="simple" description="Name of models used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.model.version" xlink:type="simple" description="Version of models used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.parameters.names" xlink:type="simple" description="Name of parameters used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.parameters.version" xlink:type="simple" description="version of parameters used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.test-cases.names" xlink:type="simple" description="Name of test-cases used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.test-cases.version" xlink:type="simple" description="Version of test-cases used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.tool.name" xlink:type="simple" description="name of tool used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.tool.version" xlink:type="simple" description="Version of tool used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.tool.settings" xlink:type="simple" description="Tool settings used in execution (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="execution.log" xlink:type="simple" description="Link to log file (optional)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:ExecuteSimulation>
+        <stc:LifeCycleInformation/>
+    </stmd:ExecutionPhase>
+    <stmd:EvaluationPhase>
+        <stmd:EvaluateSimulationResults>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d911027aa-711a-4875-b9b1-175f1657326a"/>
+                <stc:ResourceReference xlink:href="#d9588a03a-76ea-459c-8d27-a1fab0a36eb3"/>
+                <stc:ResourceReference xlink:href="#da16622b0-322f-4cec-8dfe-9b6faf6c8207"/>
+                <stc:Resource kind="document" type="image/png" source="Screenshot-DC-Motor-variants-R.png" id="d9848d259-8f98-4db4-8962-0d57fcc59bf2"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="6-1-Evaluate-Execution.md" id="d936dd70f-7169-4c94-8dc4-19fa4de1bfae"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="6-1-Evaluate-Outputs.md" id="d37100bed-6bb7-476f-b8a5-2cc90db3378a"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="evaluation.results" xlink:type="simple" description="results of the evaluation, can be report, processed data, evaluation of tests (Mandatory)"></stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="evaluation.quality-assurance" xlink:type="simple" description="Information for quality assurance (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:EvaluateSimulationResults>
+        <stmd:AssureSimulationQuality>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#d37100bed-6bb7-476f-b8a5-2cc90db3378a"/>
+                <stc:ResourceReference xlink:href="#d993a9af6-e1ef-4aab-a6e1-0e25389098e0"/>
+                <stc:ResourceReference xlink:href="#d911027aa-711a-4875-b9b1-175f1657326a"/>
+                <stc:ResourceReference xlink:href="#d9588a03a-76ea-459c-8d27-a1fab0a36eb3"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+                <stc:Resource kind="document" type="image/png" source="Screenshot-DC-Motor-variants-R.png" id="dc20a1269-a8d0-4fa3-a1c8-4102998020ef"/>
+                <stc:ResourceReference xlink:href="#ddc43aff1-7785-4f77-b26e-3448a05ad63c"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="6-2-Evaluate-Execution.md" id="d7ae15a3a-b5ac-49e9-9e66-eaa0192e8200"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="6-2-Evaluate-Outputs.md" id="d3994f1b4-ad56-4425-86d0-4e21bc480d00"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="evaluation.quality-assurance" xlink:type="simple" description="Quality information of simulation results (Mandatory)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:AssureSimulationQuality>
+        <stmd:DeriveSimulationQualityVerdict>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#d3994f1b4-ad56-4425-86d0-4e21bc480d00"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="6-3-Evaluate-Execution.md" id="d9486b0cc-0b97-461d-a5e0-9d9c8048d3f2"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="6-3-Evaluate-Outputs.md" id="d89850840-3f95-4928-a47c-72bee9112c20"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="org.prostep.srmd.simulation-task" xlink:type="simple" xlink:href="">
+                <stc:ClassificationEntry keyword="evaluation.verdict" xlink:type="simple" description="Quality verdict about simulation result (optional)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DeriveSimulationQualityVerdict>
+        <stc:LifeCycleInformation/>
+    </stmd:EvaluationPhase>
+    <stmd:FulfillmentPhase>
+        <stmd:DecideSimulationObjectiveFulfillment>
+            <stc:Input>
+                <stc:ResourceReference xlink:href="#d89850840-3f95-4928-a47c-72bee9112c20"/>
+                <stc:ResourceReference xlink:href="#d0403571f-1090-4ae1-94d9-32e7201a9fc4"/>
+                <stc:ResourceReference xlink:href="#d3994f1b4-ad56-4425-86d0-4e21bc480d00"/>
+                <stc:ResourceReference xlink:href="#d37100bed-6bb7-476f-b8a5-2cc90db3378a"/>
+                <stc:Resource kind="document" type="image/png" source="Screenshot-DC-Motor-variants-R.png" id="da159d597-5143-46e1-b0f1-7bace2644911"/>
+                <stc:ResourceReference xlink:href="#d6d407554-b8b6-464e-b4f5-c68803f91c66"/>
+                <stc:ResourceReference xlink:href="#ddc43aff1-7785-4f77-b26e-3448a05ad63c"/>
+            </stc:Input>
+            <stc:Procedure>
+                <stc:Resource kind="document" type="text/markdown" source="7-Fulfillment-Execution.md" id="d1c9df9a7-77f1-4ed4-bd48-02cdb7642e1f"/>
+            </stc:Procedure>
+            <stc:Output>
+                <stc:Resource kind="document" type="text/markdown" source="7-Fulfillment-Outputs.md" id="d45ca2b1b-2d50-49fd-bc8c-740385e8e2f1"/>
+            </stc:Output>
+            <stc:Rationale/>
+            <stc:LifeCycleInformation/>
+            <stc:Classification type="de.setlevel.srmd.simulation-meta-data" xlink:type="simple">
+                <stc:ClassificationEntry keyword="fulfillment.objectives" xlink:type="simple" description="Yes / No possible (Mandatory)">Yes</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="fulfillment.credibility" xlink:type="simple" description="Yes / No possible (Mandatory)">Yes </stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="fulfillment.task" xlink:type="simple" description="Has the simulation task been carried out successfully This means that reliable statements on objectives and credibility can be made  (Yes / No) (Recommended)">Yes</stc:ClassificationEntry>
+                <stc:ClassificationEntry keyword="fulfillment.evidence" xlink:type="simple" description="documentation that provides evidence for fulfilment (Recommended)"></stc:ClassificationEntry>
+            </stc:Classification>
+        </stmd:DecideSimulationObjectiveFulfillment>
+        <stc:LifeCycleInformation/>
+    </stmd:FulfillmentPhase>
+</stmd:SimulationTaskMetaData>

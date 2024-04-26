@@ -1,0 +1,89 @@
+{
+  "info" : "This file and other associated files based on linked filenames or filename-templates are used for the glue integration in simulations in the easySSP Tool by eXXcellent solutions. Any tempering with its content or associated filenames may result in errorneous or undesired behavior.",
+  "simulation" : {
+    "id" : "6f7f242e-6cd1-407b-b84e-6558e371d07c",
+    "systemStructureId" : "55c279ac-5858-4178-904a-c7714a6f981e",
+    "systemStructureName" : "DC-Motor",
+    "simulationName" : "DC-Motor",
+    "start-time" : "03.03.2024T 12:28Z"
+  },
+  "runs" : [ {
+    "id" : "185a59d2-21c6-4778-b729-b95c651e8ee5",
+    "parameterVariantId" : "e3f8d1e1-3f01-4d05-8eb6-97ca0a8201fd",
+    "correspondingFileFolder" : "simulation5/run1/",
+    "parameterVariantName" : "R: 1.0 Ohm",
+    "systemStructureFileName" : "SystemStructure.ssd",
+    "runName" : "R: 1.0 Ohm",
+    "status" : "done",
+    "maxRunDurationInMinutes" : 10,
+    "actualDurationInSeconds" : 9,
+    "hardwareConfig" : {
+      "id" : 256512,
+      "cpuCores" : 0.25,
+      "ramInGb" : 0.5
+    },
+    "runConfig" : {
+      "options" : {
+        "start" : 0.0,
+        "step" : 1.0E-4,
+        "stop" : 1.0
+      },
+      "version" : {
+        "api-version" : "0.1.0"
+      }
+    },
+    "targetType" : "Linux64"
+  }, {
+    "id" : "bfe9ffa1-6352-457c-8d05-186bda7e1a9b",
+    "parameterVariantId" : "0767edaf-7415-4812-80be-3827112a4af0",
+    "correspondingFileFolder" : "simulation5/run2/",
+    "parameterVariantName" : "R: 0.5 Ohm",
+    "systemStructureFileName" : "SystemStructure.ssd",
+    "runName" : "R: 0.5 Ohm",
+    "status" : "done",
+    "maxRunDurationInMinutes" : 10,
+    "actualDurationInSeconds" : 9,
+    "hardwareConfig" : {
+      "id" : 256512,
+      "cpuCores" : 0.25,
+      "ramInGb" : 0.5
+    },
+    "runConfig" : {
+      "options" : {
+        "start" : 0.0,
+        "step" : 1.0E-4,
+        "stop" : 1.0
+      },
+      "version" : {
+        "api-version" : "0.1.0"
+      }
+    },
+    "targetType" : "Linux64"
+  }, {
+    "id" : "78efe8bc-0cd8-46c5-831b-6908cd1b4913",
+    "parameterVariantId" : "2ab0dcfa-d730-4d39-bf68-7bfd7a469507",
+    "correspondingFileFolder" : "simulation5/run3/",
+    "parameterVariantName" : "R: 1.5 Ohm",
+    "systemStructureFileName" : "SystemStructure.ssd",
+    "runName" : "R: 1.5 Ohm",
+    "status" : "done",
+    "maxRunDurationInMinutes" : 10,
+    "actualDurationInSeconds" : 8,
+    "hardwareConfig" : {
+      "id" : 256512,
+      "cpuCores" : 0.25,
+      "ramInGb" : 0.5
+    },
+    "runConfig" : {
+      "options" : {
+        "start" : 0.0,
+        "step" : 1.0E-4,
+        "stop" : 1.0
+      },
+      "version" : {
+        "api-version" : "0.1.0"
+      }
+    },
+    "targetType" : "Linux64"
+  } ]
+}
