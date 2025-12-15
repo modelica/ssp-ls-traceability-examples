@@ -1,7 +1,6 @@
 **Request input**
 **(there can be additional input be part of the simulation request)**
 
-<br>
 **Phase 3 step 3 Define Design Specification Parameters**
 
 **Inputs:**
